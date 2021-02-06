@@ -21,7 +21,7 @@ func main() {
 	step, err := atlantis.NewRunStep()
 	if err != nil {
 		log.Fatal(err)
-  }
+	}
 	log.Printf("Pull request number: %d\n", step.PullNum)
 	log.Printf("Terraform plan file: %s\n", step.Planfile)
 }
