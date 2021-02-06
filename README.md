@@ -1,9 +1,12 @@
 # Atlantis SDK for Go
 
-A Go library for creating [custom `run` commands][1] for [Atlantis][2].
+Go library for creating [custom `run` commands][1] for [Atlantis][2].
 
-```go
-import atlantis "github.com/pbar1/atlantis-go"
+[![GoDoc](https://godoc.org/github.com/pbar1/atlantis-go?status.svg)](https://godoc.org/github.com/pbar1/atlantis-go)
+[![Go Report Card](https://goreportcard.com/badge/github.com/pbar1/atlantis-go)](https://goreportcard.com/report/github.com/pbar1/atlantis-go)
+
+```shell
+go get github.com/pbar1/atlantis-go
 ```
 
 ## Usage
@@ -29,6 +32,3 @@ func main() {
 
 [1]: https://www.runatlantis.io/docs/custom-workflows.html#reference
 [2]: https://www.runatlantis.io
-
-kimchi tofu soup mild, pork
-"", beef
