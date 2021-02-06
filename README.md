@@ -1,11 +1,11 @@
 # Atlantis SDK for Go
 
-Go library for creating [custom `run` commands][1] for [Atlantis][2].
-
 [![GoDoc](https://godoc.org/github.com/pbar1/atlantis-go?status.svg)](https://godoc.org/github.com/pbar1/atlantis-go)
 [![Go Report Card](https://goreportcard.com/badge/github.com/pbar1/atlantis-go)](https://goreportcard.com/report/github.com/pbar1/atlantis-go)
 
-```shell
+Go library for creating [custom `run` commands][1] for [Atlantis][2].
+
+```sh
 go get github.com/pbar1/atlantis-go
 ```
 
