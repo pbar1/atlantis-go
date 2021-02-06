@@ -12,6 +12,8 @@ import (
 )
 
 type (
+
+	// RunStep is a struct populated with the current Atlantis custom run command runtime variables.
 	RunStep struct {
 
 		// The Terraform workspace used for this project, ex. `default`.
@@ -64,9 +66,12 @@ type (
 		CommentArgs CommentArgs `envconfig:"COMMENT_ARGS"`
 	}
 
+	// CommentArgs is a string slice.
 	CommentArgs []string
 )
 
+// Decode parses the Atlantis `COMMENT_ARGS` environment variable into a string slice.
+// Flags are separated by commas and every character is escaped, ex. `atlantis plan -- arg1 arg2` will result in `COMMENT_ARGS=\a\r\g\1,\a\r\g\2`.
 func (a *CommentArgs) Decode(value string) error {
 	args := make([]string, 0)
 
